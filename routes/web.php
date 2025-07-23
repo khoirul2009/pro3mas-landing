@@ -6,6 +6,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
 Route::get('/node', [App\Http\Controllers\ComproController::class, 'node'])->name('node');
 Route::get('/vacancy', [App\Http\Controllers\ComproController::class, 'vacancy'])->name('vacancy');
 Route::get('/pi-mall', [App\Http\Controllers\ComproController::class, 'piMall'])->name('piMall');
