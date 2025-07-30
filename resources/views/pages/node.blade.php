@@ -51,8 +51,8 @@
      <header class="header">
          @include('layouts.nav')
          <div class="marketplace-hero">
-             <h1>Tanggung Jawab</h1>
-             <p>Kami mengutamakan kepercayaan dan transparansi dalam setiap layanan.</p>
+             <h1>Smart Node.Pro - Mining Cerdas, Aman, dan Terbuka</h1>
+             <p>Dapatkan passive income dengan sistem transparan dan teknologi terdesentralisasi..</p>
          </div>
      </header>
 

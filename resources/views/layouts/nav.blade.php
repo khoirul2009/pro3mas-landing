@@ -1,7 +1,7 @@
  <nav>
      <div class="nav__header">
          <div class="nav__logo">
-             <a href="#">Protiga<span>mas</span>.com</a>
+             <a href="/">Protiga<span>mas</span>.com</a>
          </div>
          <div class="nav__menu__btn" id="menu-btn">
              <span><i class="ri-menu-line"></i></span>

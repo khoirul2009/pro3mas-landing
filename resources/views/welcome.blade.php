@@ -83,11 +83,11 @@
             </p>
         </div>
         <div class="about__grid">
-            <a href="node.html" class="about__card">
+            <a href="/node" class="about__card">
                 <p>Mining Crypto</p>
                 <h4>Smart Node.Pro</h4>
             </a>
-            <a href="vakansi.html" class="about__card">
+            <a href="https://smartvakansi.com" class="about__card">
                 <p>Tour & Travel</p>
                 <h4>Smart Vakansi</h4>
             </a>
