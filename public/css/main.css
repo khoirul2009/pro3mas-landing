@@ -923,9 +923,12 @@ nav {
 }
 
 .footer__container {
-    display: grid;
-    gap: 4rem 2rem;
-    grid-template-columns: repeat(5, 1fr);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .footer__col h4 {
@@ -1097,7 +1100,7 @@ nav {
 @media (max-width: 768px) {
   .footer__container {
     display: grid;
-    grid-template-columns: 1fr; /* Satu kolom penuh */
+    grid-template-columns: repeat(4, 1fr); /* Satu kolom penuh */
     gap: 2rem; /* Sesuaikan jarak antar kolom */
   }
 
@@ -1123,6 +1126,11 @@ nav {
   }
 }
 
+@media (min-width: 1024px) {
+  .footer__container {
+    grid-template-columns: repeat(5, 1fr); /* Kembali ke 5 kolom jika cukup */
+  }
+}
 
 @media (width > 1024px) {
     .article__grid {
