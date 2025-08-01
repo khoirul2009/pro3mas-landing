@@ -77,7 +77,8 @@
                     <div><img src="assets/icon.png" alt="Mitra 1" /></div>
                     <div>{{ $office->name }}</div>
                     <div>{{ $office->location }}</div>
-                    <div><span class="badge badge-active">Aktif</span></div>
+                    <div><span class="badge badge-active">{{ $office->status == 'active' ? 'Aktif' : 'Segera Hadir' }}</span>
+                    </div>
                     <div>
                         <button class="btn-table" data-nama="{{ $office->name }}" data-direktur="{{ $office->director }}"
                             data-perusahaan="{{ $office->pt }}">
