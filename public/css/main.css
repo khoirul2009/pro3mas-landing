@@ -1100,7 +1100,6 @@ nav {
 @media (max-width: 768px) {
   .footer__container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Satu kolom penuh */
     gap: 2rem; /* Sesuaikan jarak antar kolom */
   }
 
