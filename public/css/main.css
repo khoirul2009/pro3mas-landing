@@ -995,6 +995,7 @@ nav {
     }
 
     .footer__container {
+        display: grid;
         grid-template-columns: 1fr 2fr;
     }
 
@@ -1095,6 +1096,7 @@ nav {
 
 @media (max-width: 768px) {
   .footer__container {
+    display: grid;
     grid-template-columns: 1fr; /* Satu kolom penuh */
     gap: 2rem; /* Sesuaikan jarak antar kolom */
   }
