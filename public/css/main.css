@@ -1089,7 +1089,7 @@ nav {
     }
 
     .footer__container {
-        grid-template-columns: 2fr 1fr 1.5fr;
+        grid-template-columns: repeat(5, 1fr);
     }
 
     .footer__col:first-child {
