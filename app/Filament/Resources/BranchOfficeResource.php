@@ -29,21 +29,27 @@ class BranchOfficeResource extends Resource
                 Forms\Components\TextInput::make('location')
                     ->required()
                     ->maxLength(255),
-                Forms\Components\TextInput::make('phone')
-                    ->required()
-                    ->maxLength(20),
-                Forms\Components\TextInput::make('email')
-                    ->email()
-                    ->required()
-                    ->maxLength(255),
-                Forms\Components\Textarea::make('description')
-                    ->required(),
+                // Forms\Components\TextInput::make('phone')
+                //     ->required()
+                //     ->maxLength(20),
+                // Forms\Components\TextInput::make('email')
+                //     ->email()
+                //     ->required()
+                //     ->maxLength(255),
+                // Forms\Components\Textarea::make('description')
+                //     ->required(),
                 Forms\Components\TextInput::make('director')
                     ->required()
                     ->maxLength(255),
                 Forms\Components\TextInput::make('pt')
                     ->required()
                     ->maxLength(255),
+                Forms\Components\Select::make('status')
+                    ->options([
+                        'active' => 'Aktif',
+                        'coming soong' => 'Segera Datang'
+                    ])
+
             ])->columns(2);
     }
 
