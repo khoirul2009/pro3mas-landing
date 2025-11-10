@@ -70,34 +70,35 @@
      <section class="node-packages">
          <div class="section__container">
              <h2>Pilih Paket Smart Node Sesuai Potensi Anda</h2>
+
              <div class="package-grid">
-                 <div class="package-card">
-                     <h3>Paket Starter</h3>
-                     <p class="price">Rp 5.000.000</p>
-                     <ul>
-                         <li>Akses 1 Node</li>
-                         <li>Estimasi income hingga Rp 5 juta/bulan</li>
-                         <li>Dukungan teknis & dashboard pengguna</li>
-                     </ul>
-                 </div>
-                 <div class="package-card">
-                     <h3>Paket Pro</h3>
-                     <p class="price">Rp 25.000.000</p>
-                     <ul>
-                         <li>Akses 5 Node</li>
-                         <li>Estimasi income hingga Rp 30 juta/bulan</li>
-                         <li>Prioritas dukungan & laporan bulanan</li>
-                     </ul>
-                 </div>
-                 <div class="package-card">
-                     <h3>Paket Ultimate</h3>
-                     <p class="price">Rp 100.000.000</p>
-                     <ul>
-                         <li>Akses 20 Node</li>
-                         <li>Potensi income Rp 100 juta – 1M/bulan</li>
-                         <li>Free konsultasi bisnis & benefit eksklusif</li>
-                     </ul>
-                 </div>
+                 @foreach ($products as $product)
+                     <div class="package-card">
+                         <h3>{{ $product->title }}</h3>
+                         <p class="price">Rp {{ number_format($product->price, 2) }}</p>
+                         <div>
+                             {!! $product->description !!}
+                         </div>
+                     </div>
+                     {{-- <div class="package-card">
+                         <h3>Paket Pro</h3>
+                         <p class="price">Rp 25.000.000</p>
+                         <ul>
+                             <li>Akses 5 Node</li>
+                             <li>Estimasi income hingga Rp 30 juta/bulan</li>
+                             <li>Prioritas dukungan & laporan bulanan</li>
+                         </ul>
+                     </div>
+                     <div class="package-card">
+                         <h3>Paket Ultimate</h3>
+                         <p class="price">Rp 100.000.000</p>
+                         <ul>
+                             <li>Akses 20 Node</li>
+                             <li>Potensi income Rp 100 juta – 1M/bulan</li>
+                             <li>Free konsultasi bisnis & benefit eksklusif</li>
+                         </ul>
+                     </div> --}}
+                 @endforeach
              </div>
          </div>
      </section>

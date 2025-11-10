@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Product;
 use Illuminate\Http\Request;
 
 class ComproController extends Controller
@@ -13,7 +14,8 @@ class ComproController extends Controller
 
     public function node()
     {
-        return view('pages.node');
+        $products = Product::query()->paginate(6);
+        return view('pages.node', compact('products'));
     }
 
     public function vacancy()
