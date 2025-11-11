@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="icon" href="{{ asset('assets/icon.png') }}" type="image/png" />
     <link rel="stylesheet" href="{{ asset('css/main.css?v=') . filemtime(public_path('css/main.css')) }}" />
-
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     @stack('styles')
 </head>
 
