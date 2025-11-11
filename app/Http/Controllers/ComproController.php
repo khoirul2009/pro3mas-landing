@@ -35,7 +35,7 @@ class ComproController extends Controller
     public function branchoffice()
     {
         $branchOffices = \App\Models\BranchOffice::query()
-            ->paginate();
+            ->paginate(10);
 
         return view('pages.branchoffice', [
             'offices' => $branchOffices,

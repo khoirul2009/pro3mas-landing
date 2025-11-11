@@ -89,6 +89,7 @@
             @endforeach
 
         </div>
+        {{ $offices->links() }}
     </section>
 
     <div class="modal-overlay" id="modal-overlay">
