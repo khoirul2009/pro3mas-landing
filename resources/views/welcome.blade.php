@@ -29,14 +29,14 @@
                     </div>
                 </div>
                 <div class="header__card">
-                    <span><i class="ri-building-fill"></i></span>
+                    <span><i class="ri-taxi-fill"></i></span>
                     <div>
                         <h5>Automotive</h5>
                         <h4>Smart Oto</h4>
                     </div>
                 </div>
                 <div class="header__card">
-                    <span><i class="ri-store-2-fill"></i></span>
+                    <span><i class="ri-building-fill"></i></span>
                     <div>
                         <h5>Property</h5>
                         <h4>Smart Property</h4>
