@@ -82,7 +82,7 @@ body {
 
 .header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-        url("/assets/header2.jpg");
+        url("/assets/header2.webp");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -552,7 +552,7 @@ nav {
 
 .trust__section {
     background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-        url("/assets/header.jpg");
+        url("/assets/header2.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

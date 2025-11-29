@@ -47,7 +47,7 @@ class BranchOfficeResource extends Resource
                 Forms\Components\Select::make('status')
                     ->options([
                         'active' => 'Aktif',
-                        'coming soong' => 'Segera Datang'
+                        'coming soon' => 'Segera Datang'
                     ])
 
             ])->columns(2);
@@ -73,6 +73,18 @@ class BranchOfficeResource extends Resource
                     ->sortable()
                     ->searchable(),
                 Tables\Columns\TextColumn::make('director')
+                    ->sortable()
+                    ->searchable(),
+                Tables\Columns\TextColumn::make('status')
+                    ->badge()
+                    ->colors([
+                        'success' => 'active',
+                        'warning' => 'coming soon',
+                    ])
+                    ->enum([
+                        'active' => 'Aktif',
+                        'coming soon' => 'Segera Datang',
+                    ])
                     ->sortable()
                     ->searchable(),
                 Tables\Columns\TextColumn::make('created_at')

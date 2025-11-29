@@ -76,30 +76,24 @@
                      <div class="package-card">
                          <h3>{{ $product->title }}</h3>
                          <p class="price">Rp {{ number_format($product->price, 2) }}</p>
+
                          <div>
                              {!! $product->description !!}
                          </div>
+
+                         @php
+                             $waNumber = '6285223916464';
+                             $message = 'Saya tertarik ' . $product->title;
+                             $waLink = 'https://wa.me/' . $waNumber . '?text=' . urlencode($message);
+                         @endphp
+
+                         <a href="{{ $waLink }}" target="_blank" class="btn btn-success mt-2">
+                             Hubungi via WhatsApp
+                         </a>
                      </div>
-                     {{-- <div class="package-card">
-                         <h3>Paket Pro</h3>
-                         <p class="price">Rp 25.000.000</p>
-                         <ul>
-                             <li>Akses 5 Node</li>
-                             <li>Estimasi income hingga Rp 30 juta/bulan</li>
-                             <li>Prioritas dukungan & laporan bulanan</li>
-                         </ul>
-                     </div>
-                     <div class="package-card">
-                         <h3>Paket Ultimate</h3>
-                         <p class="price">Rp 100.000.000</p>
-                         <ul>
-                             <li>Akses 20 Node</li>
-                             <li>Potensi income Rp 100 juta – 1M/bulan</li>
-                             <li>Free konsultasi bisnis & benefit eksklusif</li>
-                         </ul>
-                     </div> --}}
                  @endforeach
              </div>
+
 
              {{ $products->links() }}
          </div>

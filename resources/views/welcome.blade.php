@@ -28,6 +28,20 @@
                         <h4>Smart PI Mall</h4>
                     </div>
                 </div>
+                <div class="header__card">
+                    <span><i class="ri-building-fill"></i></span>
+                    <div>
+                        <h5>Automotive</h5>
+                        <h4>Smart Oto</h4>
+                    </div>
+                </div>
+                <div class="header__card">
+                    <span><i class="ri-store-2-fill"></i></span>
+                    <div>
+                        <h5>Property</h5>
+                        <h4>Smart Property</h4>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -294,26 +308,26 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="client__box">
-                        <img src="{{ asset('assets/client-1.jpg') }}" alt="client" class="client__photo" />
+                        <img src="{{ asset('assets/client-6.png') }}" alt="client" class="client__photo" />
                         <div class="client__info">
-                            <h4>Melati Sari</h4>
+                            <h4>Ibu Haji</h4>
                             <p class="client__role">Owner Katering</p>
                             <p class="client__quote">
-                                “Dulu repot cari bahan dan supplier, sekarang lewat Protigamas semua jadi lebih gampang dan
-                                efisien.”
+                                "Alhamdulillah akhirnya terwujud juga Pi nekwok.... Semoga sukses...”
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="client__box">
-                        <img src="{{ asset('assets/client-2.jpg') }}" alt="client" class="client__photo" />
+                        <img src="{{ asset('assets/client-7.png') }}" alt="client" class="client__photo" />
                         <div class="client__info">
-                            <h4>Rudi Hartono</h4>
+                            <h4>Taufik Zulfikar</h4>
                             <p class="client__role">Pemilik Toko Elektronik</p>
                             <p class="client__quote">
-                                “Smart PI Mall membantu saya memperluas jangkauan penjualan hingga ke luar kota. Prosesnya
-                                mudah dan cepat!”
+                                PROTIGAMAS memang Ok 👍
+                                Kami siap dukung sampe Sukses.
+                                !”
                             </p>
                         </div>
                     </div>
