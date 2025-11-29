@@ -81,10 +81,7 @@ class BranchOfficeResource extends Resource
                         'success' => 'active',
                         'warning' => 'coming soon',
                     ])
-                    ->enum([
-                        'active' => 'Aktif',
-                        'coming soon' => 'Segera Datang',
-                    ])
+                    ->formatStateUsing(fn (string $state): string => $state === 'active' ? 'Aktif' : 'Segera Datang')
                     ->sortable()
                     ->searchable(),
                 Tables\Columns\TextColumn::make('created_at')
